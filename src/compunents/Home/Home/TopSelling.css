@@ -1,0 +1,12 @@
+.top-selling-height {
+  max-height: 200px;
+}
+.recomanded-button {
+  margin: 5px 0px 100px 0px;
+  background-color: rgb(255, 0, 34);
+  color: white;
+  border-radius: 30px;
+}
+.recomanded-tex {
+  color: white;
+}

@@ -1,0 +1,26 @@
+.navbar {
+  padding: 15px;
+  background-color: #241e20;
+  clear: both;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmA-DHTp6PNwZAqFOiS-1sr_sLO07HfLDcEw&usqp=CAU); */
+}
+
+.NavLink {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0abc9a;
+}
+.navbar-brand {
+  width: 50px;
+  height: auto;
+}
+.logoutbtn {
+  color: #fffefe;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.header-logo {
+  max-height: 5vh;
+}

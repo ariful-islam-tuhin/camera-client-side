@@ -1,0 +1,19 @@
+.banner {
+  /* background-image: url("https://photographycourse.net/wp-content/uploads/2020/07/max-panama-AG67omCCP4A-unsplash-768x474.jpg");
+  background-size: 100% 100%;
+  padding: 100px 400px; */
+  width: 100%;
+  z-index: 0;
+  max-height: 80vh;
+}
+.all-btn {
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+}
+.home-border {
+  border: 22px solid rgb(5, 5, 5);
+  border-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--h_5xHBqJ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/xx916apu8eysh9enq8ga.png)
+    20% round;
+  margin-top: -22px;
+}

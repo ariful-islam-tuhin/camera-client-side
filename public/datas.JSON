@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Action Cameras",
+    "price": 12000,
+    "desc": "For the adventure seekers and adrenaline junkies, action cameras are a no brainer. Action cameras are perfect for the outdoors. They can withstand rough weather conditions, they’re shockproof, lightweight, and highly durable.For the adventure seekers and adrenaline junkies, action cameras are a no brainer. Action cameras are perfect for the outdoors. They can withstand rough weather conditions, they’re shockproof, lightweight, and highly durable.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/fabrizio-verrecchia-r1j9BNYkCsU-unsplash-600x388.jpg"
+  },
+  {
+    "name": "DSLR camera",
+    "price": 6500,
+    "desc": "DSLR stands for “Digital Single Lens Reflex”. If you’re looking to take your photography to a more professional level, consider getting a DSLR camera. They have been the go to camera for many professionals in the digital age.DSLR stands for “Digital Single Lens Reflex”. If you’re looking to take your photography to a more professional level, consider getting a DSLR camera. They have been the go to camera for many professionals in the digital age. ",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/harold-wijnholds-BROUQpB5bI4-unsplash-768x502.jpg"
+  },
+  {
+    "name": "Mirrorless cameras",
+    "price": 7600,
+    "desc": "Digital mirrorless cameras, as the name suggests, have no mirror. What you see when you look through the viewfinder is an small electronic screen. This displays what you are pointing your lens at. Digital mirrorless cameras, as the name suggests, have no mirror. What you see when you look through the viewfinder is an small electronic screen. This displays what you are pointing your lens at.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/sharegrid-E6GDStl5BuY-unsplash-768x462.jpg"
+  },
+  {
+    "name": "Bridge Cameras",
+    "price": 9000,
+    "desc": "A bridge  camera is a type of camera many people choose when they get more serious about photography. You may have discovered you love taking pictures. Is using your phone or compact camera limiting? Bridge cameras are far more capable and without the limitations of smaller cameras.A bridge  camera is a type of camera many people choose when they get more serious about photography. You may have discovered you love taking pictures. Is using your phone or compact camera limiting? Bridge cameras are far more capable and without the limitations of smaller cameras.  ",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/aryan-dhiman-3HWNrW9AEE0-unsplash-768x474.jpg"
+  },
+  {
+    "name": "Compact Cameras",
+    "price": 8000,
+    "desc": "Compact cameras are small and designed to he easy to use. This type of camera is often called a point-and-shoot camera because they are so quick and easy to take photos with. Compact cameras are small and designed to he easy to use. This type of camera is often called a point-and-shoot camera because they are so quick and easy to take photos with.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/kelly-sikkema-p5DDctK4dgA-unsplash-768x430.jpg"
+  },
+  {
+    "name": "Film Cameras",
+    "price": 11100,
+    "desc": "Film is not dead. Many beginner photographers are using film cameras to develop their style and skills. Many experience photographers prefer the look and feel of photos taken with film.Film is not dead. Many beginner photographers are using film cameras to develop their style and skills. Many experience photographers prefer the look and feel of photos taken with film.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/brooke-lark-oQ1yv6PzhN0-unsplash-696x421.jpg"
+  },
+
+  {
+    "name": "360 Cameras",
+    "price": 32000,
+    "desc": "A few popular choices for 360 degree cameras include GoPro Fusion, Samsung Gear 360, Rico Theta 5, Insta360, and the GoPro Max.A few popular choices for 360 degree cameras include GoPro Fusion, Samsung Gear 360, Rico Theta 5, Insta360, and the GoPro Max.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/jakob-owens-7aM7i2lav8U-unsplash-600x356.jpg"
+  },
+  {
+    "name": " Smartphone Cameras",
+    "price": 24000,
+    "desc": "You know what they say, “The best camera is the one you have with you”. There’s no doubt that the smartphone camera has been thYou know what they say, “The best camera is the one you have with you”. There’s no doubt that the smartphone camera has been thee",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/josh-power-FWoH2qhLb5I-unsplash-600x390.jpg"
+  },
+  {
+    "name": " Instant Cameras",
+    "price": 76000,
+    "desc": "Compact instant cameras are back and they’re definitely a fun option. Instant cameras are not only fun and easy to use, but there are different types available when it comes to “instant” photography.Compact instant cameras are back and they’re definitely a fun option. Instant cameras are not only fun and easy to use, but there are different types available when it comes to “instant” photography.",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/jordan-bauer-sSxH9bDW2w4-unsplash-600x348.jpg"
+  },
+  {
+    "name": "Medium Format Cameras",
+    "price": 98400,
+    "desc": "Back in the day, photographers used medium format cameras with 120mm films. But nowadays, medium format camera is a different type of camera. It is now replaced with a digital medium format back with a sensor size similar to 120mm film. There aren’t many in the market due to its higher price point and its niche Back in the day, photographers used medium format cameras with 120mm films. But nowadays, medium format camera is a different type of camera. It is now replaced with a digital medium format back with a sensor size similar to 120mm film. ",
+    "picture": "https://photographycourse.net/wp-content/uploads/2020/07/donald-giannatti-fEh5zZFwhus-unsplash-600x421.jpg"
+  },
+  {
+    "name": "2.7kGHz Dron camera",
+    "price": 98400,
+    "desc": "The Phantom 3 Standard is the best way to start enjoying aerial photography, even with no prior experience. With the all-in-one ready to fly design ... ",
+    "picture": "https://m.media-amazon.com/images/I/71Ao-WrjMDL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "2.4GHz Dron Camera",
+    "price": 98400,
+    "desc": "The Phantom 3 Standard is the best way to start enjoying aerial photography, even with no prior experience. With the all-in-one ready to fly design ... ",
+    "picture": "https://i2.wp.com/veer.tv/blog/wp-content/uploads/2018/07/drone-photo.jpeg?fit=940%2C627&ssl=1"
+  },
+  {
+    "name": "Fujifilm X-T4",
+    "price": 98400,
+    "desc": "The Phantom 3 Standard is the best way to start enjoying aerial photography, even with no prior experience. With the all-in-one ready to fly design ... ",
+    "picture": "https://cdn.mos.cms.futurecdn.net/QPy42y2PAHXkKmqLaVKhzV-970-80.jpg.webp"
+  },
+  {
+    "name": "Cannon EOS R5",
+    "price": 98400,
+    "desc": "The Nikon Z6 reigned as the king of this list for a long time – and while the Z6 II is only a modest successor, it should definitely be on the shortlist of anyone who's looking for a full-frame camera. The Z6 continues to offer great value, but we think the Z6 II is just about worth the extra cost if you can afford it",
+    "picture": "https://cdn.mos.cms.futurecdn.net/fjNxB4UTBgV8WSxLNKstqT-970-80.jpg.webp"
+  },
+  {
+    "name": "Fujifilm X-T4",
+    "price": 98400,
+    "desc": "Sensor size: APS-CResolution: 26.1MPViewfinder: 2.36m dotsMonitor: 3-inch articulating touchscreen, 1.04m dotsAutofocus: 425-point hybrid AFMaximum continuous shooting rate: 8fps (mechanical), 20fps (electronic shutter)Movies: 4K at 30pUser level: Beginner/intermediate ",
+    "picture": "https://cdn.mos.cms.futurecdn.net/ai4qf3ETLLvmYK2ZtcQ4b9-970-80.jpg.webp"
+  }
+]
