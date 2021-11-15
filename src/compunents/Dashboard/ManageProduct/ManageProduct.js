@@ -5,7 +5,7 @@ import ".//ManageProduct.css";
 const ManageProduct = () => {
   const [camaras, setCamaras] = useState([]);
   useEffect(() => {
-    const uri = "http://localhost:5000/services";
+    const uri = "https://vast-fortress-12735.herokuapp.com/services";
     fetch(uri)
       .then((res) => res.json())
       .then((data) => {
@@ -18,7 +18,7 @@ const ManageProduct = () => {
       "are you sure, you want to delete your product!!!"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/services/${id}`, {
+      fetch(`https://vast-fortress-12735.herokuapp.com/services/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

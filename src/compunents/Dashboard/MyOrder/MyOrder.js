@@ -8,7 +8,7 @@ const MyOrder = () => {
   const { user } = useAuth();
   const [myOrder, setMyOrder] = useState([]);
   useEffect(() => {
-    const uri = `http://localhost:5000/orders/${user?.email}`;
+    const uri = `https://vast-fortress-12735.herokuapp.com/orders/${user?.email}`;
     fetch(uri)
       .then((res) => res.json())
       .then((data) => setMyOrder(data));
@@ -19,7 +19,7 @@ const MyOrder = () => {
       "are you sure, you want to Cancle your Order!!!"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://vast-fortress-12735.herokuapp.com/orders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

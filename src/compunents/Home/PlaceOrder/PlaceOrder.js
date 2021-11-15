@@ -7,7 +7,7 @@ const PlaceOrder = () => {
   const { id } = useParams();
   const [order, setOrder] = useState({});
   useEffect(() => {
-    const uri = `http://localhost:5000/services/${id}`;
+    const uri = `https://vast-fortress-12735.herokuapp.com/services/${id}`;
     fetch(uri)
       .then((res) => res.json())
       .then((data) => setOrder(data));

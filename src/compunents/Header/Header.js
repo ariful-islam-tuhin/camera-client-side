@@ -1,13 +1,17 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 
 const Header = () => {
+  const history = useHistory();
   const { user, logOut } = useAuth();
   const activeStyle = {
     fontWeight: "bold",
     color: "white",
+  };
+  const handleLogOut = () => {
+    logOut(history);
   };
   return (
     <nav className="navbar navbar-expand-sm navbar-dark ">
@@ -46,7 +50,7 @@ const Header = () => {
           Contact
         </NavLink> */}
         {user.email ? (
-          <span className="logoutbtn" onClick={logOut}>
+          <span className="logoutbtn" onClick={handleLogOut}>
             Log out
           </span>
         ) : (

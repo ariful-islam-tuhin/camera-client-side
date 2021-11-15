@@ -9,7 +9,7 @@ const PlaceForm = (props) => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     data.status = "pending";
-    const uri = "http://localhost:5000/orders";
+    const uri = "https://vast-fortress-12735.herokuapp.com/orders";
     fetch(uri, {
       method: "POST",
       headers: {

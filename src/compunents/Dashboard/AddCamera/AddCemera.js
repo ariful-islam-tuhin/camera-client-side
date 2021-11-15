@@ -7,7 +7,7 @@ const AddCemera = () => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    const uri = `http://localhost:5000/services`;
+    const uri = `https://vast-fortress-12735.herokuapp.com/services`;
     fetch(uri, {
       method: "POST",
       headers: {

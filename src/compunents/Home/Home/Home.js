@@ -9,7 +9,7 @@ import TopSeeling from "./TopSeeling";
 const Home = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://vast-fortress-12735.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
