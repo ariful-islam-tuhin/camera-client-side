@@ -16,6 +16,7 @@ import ManageAllOrder from "../ManageAllOrder/ManageAllOrder";
 import AddCemera from "../AddCamera/AddCemera";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import ManageProduct from "../ManageProduct/ManageProduct";
+import AddminRoute from "../../Login/AddminRoute/AddminRoute";
 
 const Dashboard = () => {
   const history = useHistory();
@@ -37,54 +38,66 @@ const Dashboard = () => {
               <Nav.Link as={Link} to={`${url}`} className="dashboad-style">
                 Dashboard
               </Nav.Link>
-              {/* {!admin && <> </>} */}
-              <Nav.Link as={Link} to={`${url}/pay`} className="dashboad-style">
-                Payment Method
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={`${url}/myorders`}
-                className="dashboad-style"
-              >
-                My Orders
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={`${url}/review`}
-                className="dashboad-style"
-              >
-                Add Review
-              </Nav.Link>
+              {!admin && (
+                <>
+                  {" "}
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/pay`}
+                    className="dashboad-style"
+                  >
+                    Payment Method
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/myorders`}
+                    className="dashboad-style"
+                  >
+                    My Orders
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/review`}
+                    className="dashboad-style"
+                  >
+                    Add Review
+                  </Nav.Link>
+                </>
+              )}
 
-              {/* {admin && <> </>} */}
-              <Nav.Link
-                as={Link}
-                to={`${url}/manageorder`}
-                className="dashboad-style"
-              >
-                Manage All Orders
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={`${url}/addproduct`}
-                className="dashboad-style"
-              >
-                Add Camara
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={`${url}/makeadmin`}
-                className="dashboad-style"
-              >
-                Make Admin
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={`${url}/manageproduct`}
-                className="dashboad-style"
-              >
-                Manage Product
-              </Nav.Link>
+              {admin && (
+                <>
+                  {" "}
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/manageorder`}
+                    className="dashboad-style"
+                  >
+                    Manage All Orders
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/addproduct`}
+                    className="dashboad-style"
+                  >
+                    Add Camara
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/makeadmin`}
+                    className="dashboad-style"
+                  >
+                    Make Admin
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to={`${url}/manageproduct`}
+                    className="dashboad-style"
+                  >
+                    Manage Product
+                  </Nav.Link>
+                </>
+              )}
 
               <button onClick={handleLogOut} className="dash-btn bg-success">
                 LogOut
@@ -108,18 +121,18 @@ const Dashboard = () => {
             <Route path={`${path}/review`}>
               <AddReview></AddReview>
             </Route>
-            <Route path={`${path}/manageorder`}>
+            <AddminRoute path={`${path}/manageorder`}>
               <ManageAllOrder></ManageAllOrder>
-            </Route>
-            <Route path={`${path}/addproduct`}>
+            </AddminRoute>
+            <AddminRoute path={`${path}/addproduct`}>
               <AddCemera></AddCemera>
-            </Route>
-            <Route path={`${path}/makeadmin`}>
+            </AddminRoute>
+            <AddminRoute path={`${path}/makeadmin`}>
               <MakeAdmin></MakeAdmin>
-            </Route>
-            <Route path={`${path}/manageproduct`}>
+            </AddminRoute>
+            <AddminRoute path={`${path}/manageproduct`}>
               <ManageProduct></ManageProduct>
-            </Route>
+            </AddminRoute>
             <Route path={`${path}/*`}>
               <NotFound></NotFound>
             </Route>

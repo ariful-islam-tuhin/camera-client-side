@@ -32,7 +32,7 @@ const useFirebase = () => {
         saveUser(user.email, user.displayName, "PUT");
 
         setLogInError("");
-        const destination = location?.state?.from || "/";
+        const destination = location?.state?.from || "/dashboard";
         history.replace(destination);
       })
       .catch((error) => {
@@ -72,7 +72,7 @@ const useFirebase = () => {
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((results) => {
-        const redirect_uri = location?.state?.from || "/";
+        const redirect_uri = location?.state?.from || "/dashboard";
         history.push(redirect_uri);
         setLogInError("");
       })

@@ -13,6 +13,7 @@ import AddCemera from "./compunents/Dashboard/AddCamera/AddCemera";
 import NotFound from ".//compunents//Home//Home//NotFound";
 import Dashboard from "./compunents/Dashboard/Dashboard/Dashboard";
 import PlaceOrder from "./compunents/Home/PlaceOrder/PlaceOrder";
+import PrivetRoute from "./compunents/Login/PrivetRoute/PrivetRoute";
 
 function App() {
   return (
@@ -30,12 +31,12 @@ function App() {
             <Route path="/moreProduct">
               <MoreProduct></MoreProduct>
             </Route>
-            <Route path="/dashboard">
+            <PrivetRoute path="/dashboard">
               <Dashboard></Dashboard>
-            </Route>
-            <Route path="/placeorder/:id">
+            </PrivetRoute>
+            <PrivetRoute path="/placeorder/:id">
               <PlaceOrder></PlaceOrder>
-            </Route>
+            </PrivetRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
