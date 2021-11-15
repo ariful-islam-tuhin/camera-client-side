@@ -1,37 +1,50 @@
-import React from "react";
-import { Card } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import Rating from "react-rating";
+import "./Review.css";
 
 const Review = () => {
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    const uri = "http://localhost:5000/reviews";
+    fetch(uri)
+      .then((res) => res.json())
+      .then((data) => {
+        setReviews(data);
+      });
+  }, []);
   return (
-    <div>
-      <h3 className=" mt-4 p-4"> Review about this page </h3>
-
-      <div className="row bg-dark p-4 m-4">
-        <Card style={{ width: "18rem", margin: "0 auto" }}>
-          <Card.Body>
-            <Card.Title>Review</Card.Title>
-
-            <Card.Text></Card.Text>
-            <Card.Link href="#">Link</Card.Link>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "18rem", margin: "0 auto" }}>
-          <Card.Body>
-            <Card.Title>Review</Card.Title>
-
-            <Card.Text></Card.Text>
-            <Card.Link href="#">Link</Card.Link>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "18rem", margin: "0 auto" }}>
-          <Card.Body>
-            <Card.Title>Review</Card.Title>
-
-            <Card.Text></Card.Text>
-            <Card.Link href="#">Link</Card.Link>
-          </Card.Body>
-        </Card>
-      </div>
+    <div className="reviews-style">
+      <h2 className="text-center">Clients Review</h2>
+      <Container>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {reviews.map((review) => (
+            <Col key={review?._id}>
+              <Card className="reviews-card-style">
+                <span>
+                  <img className="review-img" src={review?.img} alt="" />
+                  <Rating
+                    className="ms-3 icon-color"
+                    initialRating={review?.rating}
+                    emptySymbol="far fa-star"
+                    fullSymbol="fas fa-star"
+                    readonly
+                  ></Rating>
+                </span>
+                <Card.Body>
+                  <Card.Title className="review-card-title">
+                    {review?.name}
+                  </Card.Title>
+                  <Card.Text className="review-card-para">
+                    {review?.review?.slice(0, 80)}...
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };

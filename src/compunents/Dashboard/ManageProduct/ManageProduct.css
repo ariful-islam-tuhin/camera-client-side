@@ -1,0 +1,9 @@
+.products-card-img {
+  max-height: 150px;
+}
+.products-card-button {
+  background-color: red;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 20px;
+}

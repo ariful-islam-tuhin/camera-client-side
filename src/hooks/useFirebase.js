@@ -29,7 +29,7 @@ const useFirebase = () => {
         // console.log(user);
 
         // save user to the database
-        // saveUser(user.email, user.displayName, "PUT");
+        saveUser(user.email, user.displayName, "PUT");
 
         setLogInError("");
         const destination = location?.state?.from || "/";
@@ -51,7 +51,7 @@ const useFirebase = () => {
         setUser(newUser);
 
         // save user to the database
-        // saveUser(email, name, "POST");
+        saveUser(email, name, "POST");
 
         // set name after register
         updateProfile(auth.currentUser, {
@@ -96,11 +96,11 @@ const useFirebase = () => {
   }, [auth]);
 
   // for admin
-  /* useEffect(() => {
-    fetch(`https://${user.email}`)
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
-  }, [user.email]); */
+  }, [user.email]);
 
   // user logout
   const logOut = (history) => {
@@ -115,17 +115,18 @@ const useFirebase = () => {
       })
       .finally(() => setLoading(false));
   };
+
   // save user to database
-  /* const saveUser = (email, displayName, method) => {
+  const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://", {
+    fetch("http://localhost:5000/users", {
       method: method,
       headers: {
         "content-type": "application/json",
       },
       body: JSON.stringify(user),
     }).then();
-  }; */
+  };
   return {
     user,
     setLoading,

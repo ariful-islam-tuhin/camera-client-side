@@ -85,7 +85,10 @@ const Login = () => {
                       </p>
                     </Form>
                     <div className="google-btn">
-                      <button onClick={handleGoogleSignIn}>
+                      <button
+                        className="google-button bg-success p-1 rounded"
+                        onClick={handleGoogleSignIn}
+                      >
                         Google Log in
                       </button>
                     </div>
@@ -104,10 +107,10 @@ const Login = () => {
                 )}
               </Col>
               <Col xs={12} md={6}>
-                <h2 className="fw-bold">AIR DRONE</h2>
+                <h2 className="fw-bold">CAMARA</h2>
                 <img
                   className="img-fluid"
-                  src="https://i.ibb.co/fGJndw8/e3dd9948fa25737a832e1688c0571484.png"
+                  src="https://dronenerds.s3-us-west-2.amazonaws.com/webimages/djifpv.gif"
                   alt=""
                 />
               </Col>

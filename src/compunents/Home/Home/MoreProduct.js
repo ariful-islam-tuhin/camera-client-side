@@ -5,7 +5,7 @@ import UseServices from "./UseServices";
 const MoreProduct = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("datas.JSON")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

@@ -30,12 +30,21 @@ const Header = () => {
         >
           MoreProduct
         </NavLink>
-        <NavLink className="NavLink" to="/about" activeStyle={activeStyle}>
+        {user?.email && (
+          <NavLink
+            className="NavLink"
+            to="/dashboard"
+            activeStyle={activeStyle}
+          >
+            Dashboard
+          </NavLink>
+        )}
+        {/* <NavLink className="NavLink" to="/about" activeStyle={activeStyle}>
           About
-        </NavLink>
-        <NavLink className="NavLink" to="/contact" activeStyle={activeStyle}>
+        </NavLink> */}
+        {/* <NavLink className="NavLink" to="#" activeStyle={activeStyle}>
           Contact
-        </NavLink>
+        </NavLink> */}
         {user.email ? (
           <span className="logoutbtn" onClick={logOut}>
             Log out

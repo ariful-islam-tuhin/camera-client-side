@@ -9,12 +9,12 @@ import TopSeeling from "./TopSeeling";
 const Home = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("datas.JSON")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
 
-  const newServices = services.slice(0, 6);
+  const newServices = services?.slice(0, 6);
   return (
     <div className="home-border">
       <Banner></Banner>
@@ -22,7 +22,7 @@ const Home = () => {
       <h1 className="p-4"> Different Types of Cameras</h1>
       <div>
         {newServices.map((service) => (
-          <Services key={service.id} service={service}></Services>
+          <Services key={service._id} service={service}></Services>
         ))}
       </div>
       <Button className=" all-btn  mb-4 p-1 text-white">
