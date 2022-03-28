@@ -1,17 +1,18 @@
 .confirm-form {
   width: 50%;
   margin: 0 auto;
-  background-color: rgb(23, 146, 74);
+  background-color: rgba(23, 146, 74, 0.527);
+  border-radius: 20px;
 }
 .place-form input {
   width: 300px;
   padding: 5px;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   border-color: rgb(70, 9, 9);
 }
 .confirmbutton {
   width: 200px;
-  background-color: rgb(7, 100, 46);
+  background-color: rgba(245, 16, 16, 0.87);
   color: white;
 }

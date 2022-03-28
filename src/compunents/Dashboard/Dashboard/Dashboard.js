@@ -109,7 +109,7 @@ const Dashboard = () => {
           <Switch>
             <Route exact path={path}>
               <div className="dash-board">
-                <h3>Welcome to Dashboard</h3>
+                <h3 className="bg-primary p-2">Welcome to Dashboard</h3>
               </div>
             </Route>
             <Route path={`${path}/pay`}>

@@ -12,7 +12,7 @@ const Services = (props) => {
           <p> {description}</p>
         </div>
         <div className="col-lg-6 p-4 mb-3 ">
-          <img className="img-fluid" src={img} alt="img" />
+          <img className="img-fluid rounded" src={img} alt="img" />
           <Link to={`/placeorder/${_id}`}>
             <button className="all-btn p-1 m-3">Order Now</button>
           </Link>

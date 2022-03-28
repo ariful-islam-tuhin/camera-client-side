@@ -24,3 +24,10 @@
 .header-logo {
   max-height: 5vh;
 }
+.header{
+  background-color: rgba(216, 14, 14, 0.76);
+  height:70px;
+  color:black;
+  font-weight: bold;
+ 
+}
